@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CocteleriApp</title>
+		<link href="css/estilos.css" rel="stylesheet" type="text/css">
+		<script type="text/javascript" src="js/menus.js"></script>
+		<meta charset="utf-8" name="viewport" content="width=device-width, user-scalable=no">
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script type="text/javascript">
+			$(window).load(function()
+			{
+				$("#loader").fadeOut("slow");
+			})
+		</script>
+	</head>
+	<body>
+		<img src="img/glass.png" id="loader">
+		<div class="bebidas">
+			<img onclick="seleccionarBebida('tequila')" src="img/tequila.png" class="imagen" id="tequila">
+			<img onclick="seleccionarBebida('vodka')" src="img/vodka.png" class="imagen" id="vodka">
+			<img onclick="seleccionarBebida('whisky')" src="img/whisky.png" class="imagen" id="whisky">
+			<img onclick="seleccionarBebida('ron')" src="img/ron.png" class="imagen" id="ron">
+			<!-- <img onclick="seleccionarBebida('cognac')" src="img/cognac.png" class="imagen" id="cognac"> -->
+			<img onclick="seleccionarBebida('ginebra')" src="img/ginebra.png" class="imagen" id="ginebra">
+			<img onclick="seleccionarBebida('cerveza')" src="img/cerveza.png" class="imagen" id="cerveza">
+		</div>
+	</body>
+</html>
