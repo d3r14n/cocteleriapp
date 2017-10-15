@@ -137,7 +137,7 @@ function mostrarReceta()
 					"<li>45ml de Tequila</li>"+
 					"<li>15ml de cointreau</li>"+
 					"<li>22ml de jugo de lima</li>"+
-					"<li>10ml de sirope de agave</li>"+
+					"<li>10ml de jarabe de agave</li>"+
 					"</ul>"+
 					"</div>"+
 					"<div class='preparacion'>"+
@@ -243,7 +243,7 @@ function mostrarReceta()
 					"<li>15ml de cointreau</li>"+
 					"<li>22ml de jugo de lima</li>"+
 					"<li>8 arandanos azules</li>"+
-					"<li>2 cucharadas de sirope de azúcar</li>"+
+					"<li>2 cucharadas de jarabe de azúcar</li>"+
 					"<li>3ml de jugo de arandanos</li>"+
 					"</ul>"+
 					"</div>"+
@@ -251,7 +251,7 @@ function mostrarReceta()
 					"PREPARACION<br>"+
 					"<ol>"+
 					"<li>Enfriar una copa coctel</li>"+
-					"<li>Añadir el jugo de lima, el sirope de azúcar y los arandanos</li>"+
+					"<li>Añadir el jugo de lima, el jarabe de azúcar y los arandanos</li>"+
 					"<li>Machacar la mezcla para sacarle el jugo a los arandanos</li>"+
 					"<li>Añadir el vodka y el cointreau</li>"+
 					"<li>Agitar y Servir</li>"+
@@ -268,7 +268,7 @@ function mostrarReceta()
 					"<ul>"+
 					"<li>40ml de Vodka</li>"+
 					"<li>20ml de café expresso</li>"+
-					"<li>10ml de sirope de azúcar</li>"+
+					"<li>10ml de jarabe de azúcar</li>"+
 					"</ul>"+
 					"</div>"+
 					"<div class='preparacion'>"+
@@ -302,7 +302,7 @@ function mostrarReceta()
 					"<ul>"+
 					"<li>50ml de Whisky</li>"+
 					"<li>22ml de jugo de limón</li>"+
-					"<li>2 cucharadas de sirope de azúcar</li>"+
+					"<li>2 cucharadas de jarabe de azúcar</li>"+
 					"<li>2 chorritos de Angostura bitter</li>"+
 					"<li>Media clara de huevo</li>"+
 					"</ul>"+
@@ -407,8 +407,8 @@ function mostrarReceta()
 					"<li>10ml de Ron Oscuro</li>"+
 					"<li>15ml de Triple Seco</li>"+
 					"<li>22ml de jugo de lima</li>"+
-					"<li>15ml de sirope de almendra</li>"+
-					"<li>7.5ml de sirope de azúcar</li>"+
+					"<li>15ml de jarabe de almendra</li>"+
+					"<li>7.5ml de jarabe de azúcar</li>"+
 					"</ul>"+
 					"</div>"+
 					"<div class='preparacion'>"+
@@ -600,7 +600,7 @@ function mostrarReceta()
 					"<ul>"+
 					"<li>45ml de Ginebra</li>"+
 					"<li>22ml de jugo de limón</li>"+
-					"<li>15ml de sirope de azúcar</li>"+
+					"<li>15ml de jarabe de azúcar</li>"+
 					"<li>10ml de licor de mora</li>"+
 					"</ul>"+
 					"</div>"+
