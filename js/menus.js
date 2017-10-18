@@ -2,7 +2,7 @@ function darPermiso()
 {
 	if(localStorage.getItem("Mayor") != "true")
 	{
-		confirmacion = confirm("Esta Aplicación Promueve la realización y consumo de bebidas alcoholicas\nPor seguridad y salud, la aplicación no debe ser usada por menores de 18 años.\n¿Eres mayor de edad?");
+		confirmacion = confirm("Esta Aplicación promueve la producción y consumo de bebidas alcoholicas\nPor seguridad y salud, la aplicación no debe ser usada por menores de 18 años.\nEntiendo la advertencia y doy fe de ser mayor de edad");
 		localStorage.setItem("Mayor", confirmacion);
 		if(confirmacion)
 		{
@@ -519,8 +519,8 @@ function mostrarReceta()
 					"<div class='ingredientes'>"+
 					"INGREDIENTES<br>"+
 					"<ul>"+
-					"<li>Champagne</li>"+
 					"<li>Cerveza</li>"+
+					"<li>Champagne</li>"+
 					"</ul>"+
 					"</div>"+
 					"<div class='preparacion'>"+
