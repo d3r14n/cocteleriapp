@@ -1,3 +1,8 @@
+function jugar()
+{
+	location.href = "juego.html";
+}
+
 function darPermiso()
 {
 	if(localStorage.getItem("Mayor") != "true")
@@ -149,7 +154,7 @@ function mostrarReceta()
 					"<li>Colar los hielos y Servir en una copa Margarita</li>"+
 					"</ol>"+
 					"</div>"+
-					"<button id='btnPlay'>JUGAR</button>";
+					"<button id='btnPlay' onclick='jugar()'>JUGAR</button>";
 					break;
 
 				case "paloma":
@@ -172,7 +177,7 @@ function mostrarReceta()
 					"<li>Añadir el jugo de limón y los demás ingredientes</li>"+
 					"</ol>"+
 					"</div>"+
-					"<button id='btnPlay'>JUGAR</button>";
+					"<button id='btnPlay' onclick='jugar()'>JUGAR</button>";
 					break;
 
 				case "sunrise":
@@ -194,7 +199,7 @@ function mostrarReceta()
 					"<li>Servir</li>"+
 					"</ol>"+
 					"</div>"+
-					"<button id='btnPlay'>JUGAR</button>";
+					"<button id='btnPlay' onclick='jugar()'>JUGAR</button>";
 					break;
 
 				default:
@@ -230,7 +235,7 @@ function mostrarReceta()
 					"<li>Servir</li>"+
 					"</ol>"+
 					"</div>"+
-					"<button id='btnPlay'>JUGAR</button>";
+					"<button id='btnPlay' onclick='jugar()'>JUGAR</button>";
 					break;
 
 				case "cosmopolitan":
@@ -257,7 +262,7 @@ function mostrarReceta()
 					"<li>Agitar y Servir</li>"+
 					"</ol>"+
 					"</div>"+
-					"<button id='btnPlay'>JUGAR</button>";
+					"<button id='btnPlay' onclick='jugar()'>JUGAR</button>";
 					break;
 
 				case "expressoMartini":
@@ -281,7 +286,7 @@ function mostrarReceta()
 					"<li>Servir</li>"+
 					"</ol>"+
 					"</div>"+
-					"<button id='btnPlay'>JUGAR</button>";
+					"<button id='btnPlay' onclick='jugar()'>JUGAR</button>";
 					break;
 
 				default:
@@ -317,7 +322,7 @@ function mostrarReceta()
 					"<li>Servir colando los hielos</li>"+
 					"</ol>"+
 					"</div>"+
-					"<button id='btnPlay'>JUGAR</button>";
+					"<button id='btnPlay' onclick='jugar()'>JUGAR</button>";
 					break;
 
 				case "rustyNail":
@@ -338,7 +343,7 @@ function mostrarReceta()
 					"<li>Vertir el Whisky y seguidamente el Drambuie</li>"+
 					"</ol>"+
 					"</div>"+
-					"<button id='btnPlay'>JUGAR</button>";
+					"<button id='btnPlay' onclick='jugar()'>JUGAR</button>";
 					break;
 
 				case "cafeIrlandes":
@@ -361,7 +366,7 @@ function mostrarReceta()
 					"<li>Por encima se añade la crema</li>"+
 					"</ol>"+
 					"</div>"+
-					"<button id='btnPlay'>JUGAR</button>";
+					"<button id='btnPlay' onclick='jugar()'>JUGAR</button>";
 					break;
 
 				default:
@@ -394,7 +399,7 @@ function mostrarReceta()
 					"<li>Colar y Servir</li>"+
 					"</ol>"+
 					"</div>"+
-					"<button id='btnPlay'>JUGAR</button>";
+					"<button id='btnPlay' onclick='jugar()'>JUGAR</button>";
 					break;
 
 				case "maiTai":
@@ -419,7 +424,7 @@ function mostrarReceta()
 					"<li>Servir en un vaso tiki</li>"+
 					"</ol>"+
 					"</div>"+
-					"<button id='btnPlay'>JUGAR</button>";
+					"<button id='btnPlay' onclick='jugar()'>JUGAR</button>";
 					break;
 
 				case "pinaColada":
@@ -442,7 +447,7 @@ function mostrarReceta()
 					"<li>Servir</li>"+
 					"</ol>"+
 					"</div>"+
-					"<button id='btnPlay'>JUGAR</button>";
+					"<button id='btnPlay' onclick='jugar()'>JUGAR</button>";
 					break;
 
 				default:
@@ -468,7 +473,7 @@ function mostrarReceta()
 					"<ol>"+
 					"</ol>"+
 					"</div>"+
-					"<button id='btnPlay'>JUGAR</button>";
+					"<button id='btnPlay' onclick='jugar()'>JUGAR</button>";
 					break;
 
 				case "2":
@@ -484,7 +489,7 @@ function mostrarReceta()
 					"<ol>"+
 					"</ol>"+
 					"</div>"+
-					"<button id='btnPlay'>JUGAR</button>";
+					"<button id='btnPlay' onclick='jugar()'>JUGAR</button>";
 					break;
 
 				case "3":
@@ -500,7 +505,7 @@ function mostrarReceta()
 					"<ol>"+
 					"</ol>"+
 					"</div>"+
-					"<button id='btnPlay'>JUGAR</button>";
+					"<button id='btnPlay' onclick='jugar()'>JUGAR</button>";
 					break;
 
 				default:
@@ -530,7 +535,7 @@ function mostrarReceta()
 					"<li>Rellenar el resto con champagne</li>"+
 					"</ol>"+
 					"</div>"+
-					"<button id='btnPlay'>JUGAR</button>";
+					"<button id='btnPlay' onclick='jugar()'>JUGAR</button>";
 					break;
 
 				case "michelada":
@@ -540,7 +545,6 @@ function mostrarReceta()
 					"INGREDIENTES<br>"+
 					"<ul>"+
 					"<li>Cerveza</li>"+
-					"<li>Limón</li>"+
 					"<li>Sal</li>"+
 					"<li>Pimienta</li>"+
 					"<li>Salsa Inglesa</li>"+
@@ -555,7 +559,7 @@ function mostrarReceta()
 					"<li>Servir la cerveza y mezclar con el petroleo</li>"+
 					"</ol>"+
 					"</div>"+
-					"<button id='btnPlay'>JUGAR</button>";
+					"<button id='btnPlay' onclick='jugar()'>JUGAR</button>";
 					break;
 
 				default:
@@ -589,7 +593,7 @@ function mostrarReceta()
 					"<li>Servir</li>"+
 					"</ol>"+
 					"</div>"+
-					"<button id='btnPlay'>JUGAR</button>";
+					"<button id='btnPlay' onclick='jugar()'>JUGAR</button>";
 					break;
 
 				case "bramble":
@@ -615,7 +619,7 @@ function mostrarReceta()
 					"<li>Añadir el licor de mora</li>"+
 					"</ol>"+
 					"</div>"+
-					"<button id='btnPlay'>JUGAR</button>";
+					"<button id='btnPlay' onclick='jugar()'>JUGAR</button>";
 					break;
 
 				case "gimlet":
@@ -639,7 +643,7 @@ function mostrarReceta()
 					"<li>Colar y Servir</li>"+
 					"</ol>"+
 					"</div>"+
-					"<button id='btnPlay'>JUGAR</button>";
+					"<button id='btnPlay' onclick='jugar()'>JUGAR</button>";
 					break;
 
 				default:
