@@ -3,7 +3,7 @@
 	<head>
 		<title>CocteleriApp</title>
 		<link href="css/estilos.css" rel="stylesheet" type="text/css">
-		<script type="text/javascript" src="js/juego.js"></script>
+		<!-- <script type="text/javascript" src="js/juego.js"></script> -->
 		<meta charset="utf-8" name="viewport" content="width=device-width, user-scalable=no">
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 		<script type="text/javascript">
@@ -12,22 +12,67 @@
 				$("#loader").fadeOut("slow");
 			})
 		</script>
+		<script type="text/javascript" src="https://cdn.rawgit.com/alexgibson/shake.js/master/shake.js"></script>
 	</head>
-	<body>
+	<body onload="contarIngredientes()">
 		<div class="estanteria">
-			<img src="" class="ingrediente" ontouchmove="mover()">
-			<img src="" class="ingrediente" ontouchmove="mover()">
-			<img src="" class="ingrediente" ontouchmove="mover()">
-			<img src="" class="ingrediente" ontouchmove="mover()">
-			<img src="" class="ingrediente" ontouchmove="mover()">
-			<img src="" class="ingrediente" ontouchmove="mover()">
+			<img src="img/cerveza.png" class="ingrediente" ontouchstart="anadir(this)">
+			<img src="img/cognac.png" class="ingrediente" ontouchstart="anadir(this)">
+			<img src="img/vodka.png" class="ingrediente" ontouchstart="anadir(this)">
+			<img src="img/ron.png" class="ingrediente" ontouchstart="anadir(this)">
+			<img src="img/tequila.png" class="ingrediente" ontouchstart="anadir(this)">
+			<img src="img/ginebra.png" class="ingrediente" ontouchstart="anadir(this)">
 		</div>
-		<div class="mesa">
-			<img src="" class="recipiente"" ontouchmove="mover()">
+		<div id="mesa">
+			<img src="" id="recipiente"">
 		</div>
 		<footer>
 			<a href='receta.html' class='volver'><img src='img/return.png'></a>
 		</footer>
+
+		<script type="text/javascript">
+			var ingredientesSinAnadir = 6;
+
+			var shakeEvent = new Shake({threshold: 15});
+			shakeEvent.start();
+			window.addEventListener('shake', function()
+			{
+				if(ingredientesSinAnadir == 0)
+				{
+					alert("Shaked");
+				}
+			}, false);
+			function stopShake()
+			{
+				shakeEvent.stop();
+			}
+
+			function contarIngredientes()
+			{
+				coctel = localStorage.getItem("Coctel");
+			}
+
+			function anadir(ingrediente)
+			{
+				if(ingrediente.style.display != "none")
+				{
+					ingrediente.style.display = "none";
+					ingredientesSinAnadir = ingredientesSinAnadir - 1;
+					if(ingredientesSinAnadir == 0)
+					{
+						ingredientesSinAnadir = 0;
+						mesa = document.getElementById('mesa');
+						recipiente = document.getElementById('recipiente');
+						mesa.style.height = "90%";
+						mesa.style.background = "yellow";
+						recipiente.style.height = "70%";
+						recipiente.style.marginTop = "25%";
+					}
+					console.log(ingredientesSinAnadir);
+				}
+			}
+		</script>
+
 	</body>
 </html>
 
@@ -35,29 +80,29 @@
 MAX INGREDIENTES: 6
 
 LISTA INGREDIENTES
-	*TEQUILA
-	*VODKA
-	*WHISKY
-	*RON BLANCO
-	*RON OSCURO
-	*GINEBRA
-	*CERVEZA
-	°Agua Mineral
-	°Angostura Bitter
-	°Arandanos Azules
-	°Azúcar
-	°Azúcar Morena
-	°Café Expresso
-	°Champagne
-	°Clara de Huevo
-	°Coinstreau
-	°Cordial de Lima
-	°Crema
-	°Crema de Coco
-	°Crema de Violetas
-	°Drambuie
-	°Granadina
-	°Hielo
+	*TEQUILA°
+	*VODKA°
+	*WHISKY°
+	*RON BLANCO°
+	*RON OSCURO°
+	*GINEBRA°
+	*CERVEZA°
+	°Agua Mineral°
+	°Angostura Bitter°
+	°Arandanos Azules°
+	°Azúcar°
+	°Azúcar Morena°
+	°Café°
+	°Champagne°
+	°Clara de Huevo°
+	°Cointreau°
+	°Cordial de Lima°
+	°Crema°
+	°Crema de Coco°
+	°Crema de Violetas°
+	°Drambuie°
+	°Granadina°
+	°Hielo°
 	°Jarabe de Agave
 	°Jarabe de Almendra
 	°Jarabe de Azúcar
