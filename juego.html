@@ -4,6 +4,7 @@
 		<title>CocteleriApp</title>
 		<link href="css/estilos.css" rel="stylesheet" type="text/css">
 		<meta charset="utf-8" name="viewport" content="width=device-width, user-scalable=no">
+		<script type="text/javascript" src="js/menus.js"></script>
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 		<script type="text/javascript">
 			$(window).load(function()
@@ -13,7 +14,7 @@
 		</script>
 		<script type="text/javascript" src="https://cdn.rawgit.com/alexgibson/shake.js/master/shake.js"></script>
 	</head>
-	<body onload="contarIngredientes()">
+	<body onload="cargarIngredientes()">
 		<div id="estanteria">
 			<!-- <img src="img/ing/cerveza.png" class="ingrediente" ontouchstart="anadir(this)">
 			<img src="img/ing/whisky.png" class="ingrediente" ontouchstart="anadir(this)">
@@ -47,6 +48,136 @@
 				shakeEvent.stop();
 			}
 
+			function cargarIngredientes()
+			{
+				coctel = contarIngredientes();
+				switch(coctel)
+				{
+					case "margarita":
+						ingre = "<img src='img/ing/tequila.png' class='ingrediente' ontouchstart='anadir(this)'>"+
+						"<img src='img/ing/cointreau.png' class='ingrediente' ontouchstart='anadir(this)'>"+
+						"<img src='img/ing/jugoLima.png' class='ingrediente' ontouchstart='anadir(this)'>"+
+						"<img src='img/ing/jarabeAgave.png' class='ingrediente' ontouchstart='anadir(this)'>";
+					break;
+
+					case "paloma":
+						ingre = "<img src='img/ing/tequila.png' class='ingrediente' ontouchstart='anadir(this)'>"+
+						"<img src='img/ing/jugoToronja.png' class='ingrediente' ontouchstart='anadir(this)'>"+
+						"<img src='img/ing/azucar.png' class='ingrediente' ontouchstart='anadir(this)'>"+
+						"<img src='img/ing/limon.png' class='ingrediente' ontouchstart='anadir(this)'>"+
+						"<img src='img/ing/aguaMineral.png' class='ingrediente' ontouchstart='anadir(this)'>";
+					break;
+
+					case "sunrise":
+						ingre = "<img src='img/ing/tequila.png' class='ingrediente' ontouchstart='anadir(this)'>"+
+						"<img src='img/ing/jugoNaranja.png' class='ingrediente' ontouchstart='anadir(this)'>"+
+						"<img src='img/ing/granadina.png' class='ingrediente' ontouchstart='anadir(this)'>";
+					break;
+
+					case "bloodyMary":
+						ingre = "<img src='img/ing/vodka.png' class='ingrediente' ontouchstart='anadir(this)'>"+
+						"<img src='img/ing/salsaWorcestershire.png' class='ingrediente' ontouchstart='anadir(this)'>"+
+						"<img src='img/ing/jugoJitomate.png' class='ingrediente' ontouchstart='anadir(this)'>"+
+						"<img src='img/ing/salsaTabasco.png' class='ingrediente' ontouchstart='anadir(this)'>"+
+						"<img src='img/ing/sal.png' class='ingrediente' ontouchstart='anadir(this)'>"+
+						"<img src='img/ing/jugoLimon.png' class='ingrediente' ontouchstart='anadir(this)'>";
+					break;
+
+					case "cosmopolitan":
+						ingre = "<img src='img/ing/vodka.png' class='ingrediente' ontouchstart='anadir(this)'>"+
+						"<img src='img/ing/cointreau.png' class='ingrediente' ontouchstart='anadir(this)'>"+
+						"<img src='img/ing/jugoLima.png' class='ingrediente' ontouchstart='anadir(this)'>"+
+						"<img src='img/ing/arandanosAzules.png' class='ingrediente' ontouchstart='anadir(this)'>"+
+						"<img src='img/ing/jarabeAzucar.png' class='ingrediente' ontouchstart='anadir(this)'>"+
+						"<img src='img/ing/jugoArandano.png' class='ingrediente' ontouchstart='anadir(this)'>";
+					break;
+
+					case "expressoMartini":
+						ingre = "<img src='img/ing/vodka.png' class='ingrediente' ontouchstart='anadir(this)'>"+
+						"<img src='img/ing/cafe.png' class='ingrediente' ontouchstart='anadir(this)'>"+
+						"<img src='img/ing/jarabeAzucar.png' class='ingrediente' ontouchstart='anadir(this)'>";
+					break;
+
+					case "whiskeySour":
+						ingre = "<img src='img/ing/whisky.png' class='ingrediente' ontouchstart='anadir(this)'>"+
+						"<img src='img/ing/jugoLimon.png' class='ingrediente' ontouchstart='anadir(this)'>"+
+						"<img src='img/ing/jarabeAzucar.png' class='ingrediente' ontouchstart='anadir(this)'>"+
+						"<img src='img/ing/angosturaBitter.png' class='ingrediente' ontouchstart='anadir(this)'>"+
+						"<img src='img/ing/huevo.png' class='ingrediente' ontouchstart='anadir(this)'>";
+					break;
+
+					case "rustyNail":
+						ingre = "<img src='img/ing/whisky.png' class='ingrediente' ontouchstart='anadir(this)'>"+
+						"<img src='img/ing/drambuie.png' class='ingrediente' ontouchstart='anadir(this)'>"+
+						"<img src='img/ing/hielo.png' class='ingrediente' ontouchstart='anadir(this)'>";
+					break;
+
+					case "cafeIrlandes":
+						ingre = "<img src='img/ing/whisky.png' class='ingrediente' ontouchstart='anadir(this)'>"+
+						"<img src='img/ing/cafe.png' class='ingrediente' ontouchstart='anadir(this)'>"+
+						"<img src='img/ing/crema.png' class='ingrediente' ontouchstart='anadir(this)'>"+
+						"<img src='img/ing/azucarMorena.png' class='ingrediente' ontouchstart='anadir(this)'>";
+					break;
+
+					case "daiquiri":
+						ingre = "<img src='img/ing/ronBlanco.png' class='ingrediente' ontouchstart='anadir(this)'>"+
+						"<img src='img/ing/jugoLima.png' class='ingrediente' ontouchstart='anadir(this)'>"+
+						"<img src='img/ing/azucar.png' class='ingrediente' ontouchstart='anadir(this)'>";
+					break;
+
+					case "maiTai":
+						ingre = "<img src='img/ing/ronBlanco.png' class='ingrediente' ontouchstart='anadir(this)'>"+
+						"<img src='img/ing/ronOscuro.png' class='ingrediente' ontouchstart='anadir(this)'>"+
+						"<img src='img/ing/tripleSeco.png' class='ingrediente' ontouchstart='anadir(this)'>"+
+						"<img src='img/ing/jugoLima.png' class='ingrediente' ontouchstart='anadir(this)'>"+
+						"<img src='img/ing/jarabeAlmendra.png' class='ingrediente' ontouchstart='anadir(this)'>"+
+						"<img src='img/ing/jarabeAzucar.png' class='ingrediente' ontouchstart='anadir(this)'>";
+					break;
+
+					case "pinaColada":
+						ingre = "<img src='img/ing/ronBlanco.png' class='ingrediente' ontouchstart='anadir(this)'>"+
+						"<img src='img/ing/ronOscuro.png' class='ingrediente' ontouchstart='anadir(this)'>"+
+						"<img src='img/ing/jugoPina.png' class='ingrediente' ontouchstart='anadir(this)'>"+
+						"<img src='img/ing/cremaCoco.png' class='ingrediente' ontouchstart='anadir(this)'>";
+					break;
+
+					case "aviation":
+						ingre = "<img src='img/ing/ginebra.png' class='ingrediente' ontouchstart='anadir(this)'>"+
+						"<img src='img/ing/jugoLimon.png' class='ingrediente' ontouchstart='anadir(this)'>"+
+						"<img src='img/ing/licorMarrasquino.png' class='ingrediente' ontouchstart='anadir(this)'>"+
+						"<img src='img/ing/violetas.png' class='ingrediente' ontouchstart='anadir(this)'>";
+					break;
+
+					case "bramble":
+						ingre = "<img src='img/ing/ginebra.png' class='ingrediente' ontouchstart='anadir(this)'>"+
+						"<img src='img/ing/jugoLimon.png' class='ingrediente' ontouchstart='anadir(this)'>"+
+						"<img src='img/ing/jarabeAzucar.png' class='ingrediente' ontouchstart='anadir(this)'>"+
+						"<img src='img/ing/licorMora.png' class='ingrediente' ontouchstart='anadir(this)'>";
+					break;
+
+					case "gimlet":
+						ingre = "<img src='img/ing/ginebra.png' class='ingrediente' ontouchstart='anadir(this)'>"+
+						"<img src='img/ing/cordialLima.png' class='ingrediente' ontouchstart='anadir(this)'>"+
+						"<img src='img/ing/limon.png' class='ingrediente' ontouchstart='anadir(this)'>";
+					break;
+
+					case "blackVelvet":
+						ingre = "<img src='img/ing/cerveza.png' class='ingrediente' ontouchstart='anadir(this)'>"+
+						"<img src='img/ing/champagne.png' class='ingrediente' ontouchstart='anadir(this)'>";
+					break;
+
+					case "michelada":
+						ingre = "<img src='img/ing/cerveza.png' class='ingrediente' ontouchstart='anadir(this)'>"+
+						"<img src='img/ing/sal.png' class='ingrediente' ontouchstart='anadir(this)'>"+
+						"<img src='img/ing/pimienta.png' class='ingrediente' ontouchstart='anadir(this)'>"+
+						"<img src='img/ing/salsaInglesa.png' class='ingrediente' ontouchstart='anadir(this)'>"+
+						"<img src='img/ing/salsaMaggi.png' class='ingrediente' ontouchstart='anadir(this)'>"+
+						"<img src='img/ing/salsaTabasco.png' class='ingrediente' ontouchstart='anadir(this)'>";
+					break;
+				}
+				document.getElementById('estanteria').innerHTML = ingre;
+			}
+
 			function contarIngredientes()
 			{
 				coctel = sessionStorage.getItem("Coctel");
@@ -56,12 +187,12 @@
 					ingredientesSinAnadir = 2;
 				}
 				// Ingredientes: 3
-				if(coctel == "sunrise" || coctel == "expressoMartini" || coctel == "rustyNail" || coctel == "daiquiri" || coctel == "pinaColada" || coctel == "gimlet")
+				if(coctel == "sunrise" || coctel == "expressoMartini" || coctel == "rustyNail" || coctel == "daiquiri" || coctel == "gimlet")
 				{
 					ingredientesSinAnadir = 3;
 				}
 				// Ingredientes: 4
-				if(coctel == "margarita" || coctel == "cafeIrlandes" || coctel == "aviation" || coctel == "bramble")
+				if(coctel == "margarita" || coctel == "cafeIrlandes" || coctel == "pinaColada" || coctel == "aviation" || coctel == "bramble")
 				{
 					ingredientesSinAnadir = 4;
 				}
@@ -75,6 +206,7 @@
 				{
 					ingredientesSinAnadir = 6;
 				}
+				return coctel;
 			}
 
 			function anadir(ingrediente)
