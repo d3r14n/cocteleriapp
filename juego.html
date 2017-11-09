@@ -3,7 +3,6 @@
 	<head>
 		<title>CocteleriApp</title>
 		<link href="css/estilos.css" rel="stylesheet" type="text/css">
-		<!-- <script type="text/javascript" src="js/juego.js"></script> -->
 		<meta charset="utf-8" name="viewport" content="width=device-width, user-scalable=no">
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 		<script type="text/javascript">
@@ -15,23 +14,23 @@
 		<script type="text/javascript" src="https://cdn.rawgit.com/alexgibson/shake.js/master/shake.js"></script>
 	</head>
 	<body onload="contarIngredientes()">
-		<div class="estanteria">
-			<img src="img/cerveza.png" class="ingrediente" ontouchstart="anadir(this)">
-			<img src="img/cognac.png" class="ingrediente" ontouchstart="anadir(this)">
-			<img src="img/vodka.png" class="ingrediente" ontouchstart="anadir(this)">
-			<img src="img/ron.png" class="ingrediente" ontouchstart="anadir(this)">
-			<img src="img/tequila.png" class="ingrediente" ontouchstart="anadir(this)">
-			<img src="img/ginebra.png" class="ingrediente" ontouchstart="anadir(this)">
+		<div id="estanteria">
+			<!-- <img src="img/ing/cerveza.png" class="ingrediente" ontouchstart="anadir(this)">
+			<img src="img/ing/whisky.png" class="ingrediente" ontouchstart="anadir(this)">
+			<img src="img/ing/vodka.png" class="ingrediente" ontouchstart="anadir(this)">
+			<img src="img/ing/ronBlanco.png" class="ingrediente" ontouchstart="anadir(this)">
+			<img src="img/ing/tequila.png" class="ingrediente" ontouchstart="anadir(this)">
+			<img src="img/ing/ginebra.png" class="ingrediente" ontouchstart="anadir(this)"> -->
 		</div>
 		<div id="mesa">
-			<img src="" id="recipiente"">
+			<img src="img/boston.png" id="recipiente"">
 		</div>
 		<footer>
 			<a href='receta.html' class='volver'><img src='img/return.png'></a>
 		</footer>
 
 		<script type="text/javascript">
-			var ingredientesSinAnadir = 6;
+			var ingredientesSinAnadir;
 
 			var shakeEvent = new Shake({threshold: 15});
 			shakeEvent.start();
@@ -39,7 +38,8 @@
 			{
 				if(ingredientesSinAnadir == 0)
 				{
-					alert("Shaked");
+					//alert("Shaked");
+					setTimeout(terminar, 5000);
 				}
 			}, false);
 			function stopShake()
@@ -49,7 +49,32 @@
 
 			function contarIngredientes()
 			{
-				coctel = localStorage.getItem("Coctel");
+				coctel = sessionStorage.getItem("Coctel");
+				// Ingredientes: 2
+				if(coctel == "blackVelvet")
+				{
+					ingredientesSinAnadir = 2;
+				}
+				// Ingredientes: 3
+				if(coctel == "sunrise" || coctel == "expressoMartini" || coctel == "rustyNail" || coctel == "daiquiri" || coctel == "pinaColada" || coctel == "gimlet")
+				{
+					ingredientesSinAnadir = 3;
+				}
+				// Ingredientes: 4
+				if(coctel == "margarita" || coctel == "cafeIrlandes" || coctel == "aviation" || coctel == "bramble")
+				{
+					ingredientesSinAnadir = 4;
+				}
+				// Ingredientes: 5
+				if(coctel == "paloma" || coctel == "whiskeySour")
+				{
+					ingredientesSinAnadir = 5;
+				}
+				// Ingredientes: 6
+				if(coctel == "bloodyMary" || coctel == "cosmopolitan" || coctel == "maiTai" || coctel == "michelada")
+				{
+					ingredientesSinAnadir = 6;
+				}
 			}
 
 			function anadir(ingrediente)
@@ -70,6 +95,13 @@
 					}
 					console.log(ingredientesSinAnadir);
 				}
+			}
+
+			function terminar()
+			{
+				stopShake();
+				alert("¡Felicidades!");
+				location.href = "bebidas.html";
 			}
 		</script>
 
