@@ -314,8 +314,8 @@
 	top: 0;
 	padding-top: 5%;
 	padding-bottom: 5%;
-	background-color: red;
 	box-sizing: border-box;
+	background: linear-gradient(#A4C7CB, #638D99);
 }
 
 .ingrediente
@@ -324,7 +324,6 @@
 	height: 50%;
 	margin: 0.5%;
 	float: left;
-	background: blue;
 }
 
 #mesa
@@ -333,7 +332,7 @@
 	height: 40%;
 	position: absolute;
 	bottom: 10%;
-	background: green;
+	background: linear-gradient(#638D99, #A4C7CB);
 }
 
 #recipiente
@@ -344,7 +343,6 @@
 	float: left;
 	margin-left: 20%;
 	margin-top: 5%;
-	background: purple;
 }
 
 footer
