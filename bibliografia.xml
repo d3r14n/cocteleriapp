@@ -3,4 +3,7 @@
 	<libros>
 		<libro1 titulo="Cóctel: Los secretos más exclusivos" autor="Tupac Kirby" editorial="OBERON" pais="España" anio="2015"/>
 	</libros>
+	<plugins>
+		<plugin1 nombre="shake.js" autor="Alex Gibson" repositorio="github.com/alexgibson/shake.js">
+	</plugins>
 </bibliografia>

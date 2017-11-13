@@ -15,14 +15,14 @@
 		<script type="text/javascript" src="https://cdn.rawgit.com/alexgibson/shake.js/master/shake.js"></script>
 	</head>
 	<body onload="cargarIngredientes()">
-		<div id="estanteria">
-			<!-- <img src="img/ing/cerveza.png" class="ingrediente" ontouchstart="anadir(this)">
-			<img src="img/ing/whisky.png" class="ingrediente" ontouchstart="anadir(this)">
-			<img src="img/ing/vodka.png" class="ingrediente" ontouchstart="anadir(this)">
-			<img src="img/ing/ronBlanco.png" class="ingrediente" ontouchstart="anadir(this)">
-			<img src="img/ing/tequila.png" class="ingrediente" ontouchstart="anadir(this)">
-			<img src="img/ing/ginebra.png" class="ingrediente" ontouchstart="anadir(this)"> -->
+		<img src="img/glass.png" id="loader">
+		<div id="modal">
+			<div class="modal-content">
+				<p><b>¡FELICIDADES!</b></p><br>
+				<button class="close" onclick="volver()">Volver</button>
+			</div>
 		</div>
+		<div id="estanteria"></div>
 		<div id="mesa">
 			<img src="img/boston.png" id="recipiente"">
 		</div>
@@ -40,7 +40,7 @@
 				if(ingredientesSinAnadir == 0)
 				{
 					//alert("Shaked");
-					setTimeout(terminar, 5000);
+					setTimeout(terminar, 3000);
 				}
 			}, false);
 			function stopShake()
@@ -217,21 +217,36 @@
 					ingredientesSinAnadir = ingredientesSinAnadir - 1;
 					if(ingredientesSinAnadir == 0)
 					{
-						ingredientesSinAnadir = 0;
 						mesa = document.getElementById('mesa');
 						recipiente = document.getElementById('recipiente');
 						mesa.style.height = "90%";
 						recipiente.style.height = "70%";
 						recipiente.style.marginTop = "25%";
 					}
-					console.log(ingredientesSinAnadir);
 				}
 			}
 
 			function terminar()
 			{
 				stopShake();
-				alert("¡Felicidades!");
+				myCoctel = sessionStorage.getItem('Coctel');
+				myCoctel = "img/coc/"+myCoctel+".png";
+				myContainer = document.getElementById('recipiente');
+				myContainer.style.animation = "fadeOut 2s";
+				myContainer.src = myCoctel;
+				myContainer.style.animation = "fadeIn 2s";
+				setTimeout(felicitar, 3000);
+			}
+
+			function felicitar()
+			{
+				modal = document.getElementById('modal');
+				modal.style.display = "block";
+			}
+
+			function volver()
+			{
+				modal.style.display = "none";
 				location.href = "bebidas.html";
 			}
 		</script>

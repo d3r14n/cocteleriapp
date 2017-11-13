@@ -38,83 +38,83 @@ function mostrarCocteles()
 	{
 		case "tequila":
 			niuwHTML =
-			"<img src='img/tequila.png' class='imagenPrincipal'>"+
+			"<img src='img/beb/tequila.png' class='imagenPrincipal'>"+
 			"<a href='menu.html' class='volver'><img src='img/return.png'></a>"+
-			"<img src='' class='imagenCoctel'>"+
+			"<img src='img/coc/margarita.png' class='imagenCoctel'>"+
 			"<p onclick='seleccionarCoctel(\"margarita\")'>Margarita</p>"+
-			"<img src='' class='imagenCoctel'>"+
+			"<img src='img/coc/paloma.png' class='imagenCoctel'>"+
 			"<p onclick='seleccionarCoctel(\"paloma\")'>Paloma</p>"+
-			"<img src='' class='imagenCoctel'>"+
+			"<img src='img/coc/sunrise.png' class='imagenCoctel'>"+
 			"<p onclick='seleccionarCoctel(\"sunrise\")'>Sunrise</p>";
 			break;
 
 		case "vodka":
 			niuwHTML =
-			"<img src='img/vodka.png' class='imagenPrincipal'>"+
+			"<img src='img/beb/vodka.png' class='imagenPrincipal'>"+
 			"<a href='menu.html' class='volver'><img src='img/return.png'></a>"+
-			"<img src='' class='imagenCoctel'>"+
+			"<img src='img/coc/bloodyMary.png' class='imagenCoctel'>"+
 			"<p onclick='seleccionarCoctel(\"bloodyMary\")'>Bloody Mary</p>"+
-			"<img src='' class='imagenCoctel'>"+
+			"<img src='img/coc/cosmopolitan.png' class='imagenCoctel'>"+
 			"<p onclick='seleccionarCoctel(\"cosmopolitan\")'>Cosmopolitan</p>"+
-			"<img src='' class='imagenCoctel'>"+
+			"<img src='img/coc/expressoMartini.png' class='imagenCoctel'>"+
 			"<p onclick='seleccionarCoctel(\"expressoMartini\")'>Expresso Martini</p>";
 			break;
 
 		case "whisky":
 			niuwHTML =
-			"<img src='img/whisky.png' class='imagenPrincipal'>"+
+			"<img src='img/beb/whisky.png' class='imagenPrincipal'>"+
 			"<a href='menu.html' class='volver'><img src='img/return.png'></a>"+
-			"<img src='' class='imagenCoctel'>"+
+			"<img src='img/coc/whiskeySour.png' class='imagenCoctel'>"+
 			"<p onclick='seleccionarCoctel(\"whiskeySour\")'>Whiskey Sour</p>"+
-			"<img src='' class='imagenCoctel'>"+
+			"<img src='img/coc/rustyNail.png' class='imagenCoctel'>"+
 			"<p onclick='seleccionarCoctel(\"rustyNail\")'>Rusty Nail</p>"+
-			"<img src='' class='imagenCoctel'>"+
+			"<img src='img/coc/cafeIrlandes.png' class='imagenCoctel'>"+
 			"<p onclick='seleccionarCoctel(\"cafeIrlandes\")'>Café Irlandés</p>";
 			break;
 
 		case "ron":
 			niuwHTML =
-			"<img src='img/ron.png' class='imagenPrincipal'>"+
+			"<img src='img/beb/ron.png' class='imagenPrincipal'>"+
 			"<a href='menu.html' class='volver'><img src='img/return.png'></a>"+
-			"<img src='' class='imagenCoctel'>"+
+			"<img src='img/coc/daiquiri.png' class='imagenCoctel'>"+
 			"<p onclick='seleccionarCoctel(\"daiquiri\")'>Daiquirí</p>"+
-			"<img src='' class='imagenCoctel'>"+
+			"<img src='img/coc/maiTai.png' class='imagenCoctel'>"+
 			"<p onclick='seleccionarCoctel(\"maiTai\")'>Mai Tai</p>"+
-			"<img src='' class='imagenCoctel'>"+
+			"<img src='img/coc/pinaColada.png' class='imagenCoctel'>"+
 			"<p onclick='seleccionarCoctel(\"pinaColada\")'>Piña Colada</p>";
 			break;
 
 		case "cognac":
 			niuwHTML =
-			"<img src='img/cognac.png' class='imagenPrincipal'>"+
+			"<img src='img/beb/cognac.png' class='imagenPrincipal'>"+
 			"<a href='menu.html' class='volver'><img src='img/return.png'></a>"+
-			"<img src='' class='imagenCoctel'>"+
+			"<img src='img/coc/.png' class='imagenCoctel'>"+
 			"<p onclick='seleccionarCoctel(\"\")'>Coctel 1</p>"+
-			"<img src='' class='imagenCoctel'>"+
+			"<img src='img/coc/.png' class='imagenCoctel'>"+
 			"<p onclick='seleccionarCoctel(\"\")'>Coctel 2</p>"+
-			"<img src='' class='imagenCoctel'>"+
+			"<img src='img/coc/.png' class='imagenCoctel'>"+
 			"<p onclick='seleccionarCoctel(\"\")'>Coctel 3</p>";
 			break;
 
 		case "cerveza":
 			niuwHTML =
-			"<img src='img/cerveza.png' class='imagenPrincipal'>"+
+			"<img src='img/beb/cerveza.png' class='imagenPrincipal'>"+
 			"<a href='menu.html' class='volver'><img src='img/return.png'></a>"+
-			"<img src='' class='imagenCoctel'>"+
+			"<img src='img/coc/blackVelvet.png' class='imagenCoctel'>"+
 			"<p onclick='seleccionarCoctel(\"blackVelvet\")'>Black Velvet</p>"+
-			"<img src='' class='imagenCoctel'>"+
+			"<img src='img/coc/michelada.png' class='imagenCoctel'>"+
 			"<p onclick='seleccionarCoctel(\"michelada\")'>Michelada</p>";
 			break;
 
 		case "ginebra":
 			niuwHTML =
-			"<img src='img/ginebra.png' class='imagenPrincipal'>"+
+			"<img src='img/beb/ginebra.png' class='imagenPrincipal'>"+
 			"<a href='menu.html' class='volver'><img src='img/return.png'></a>"+
-			"<img src='' class='imagenCoctel'>"+
+			"<img src='img/coc/aviation.png' class='imagenCoctel'>"+
 			"<p onclick='seleccionarCoctel(\"aviation\")'>Aviation</p>"+
-			"<img src='' class='imagenCoctel'>"+
+			"<img src='img/coc/bramble.png' class='imagenCoctel'>"+
 			"<p onclick='seleccionarCoctel(\"bramble\")'>Bramble</p>"+
-			"<img src='' class='imagenCoctel'>"+
+			"<img src='img/coc/gimlet.png' class='imagenCoctel'>"+
 			"<p onclick='seleccionarCoctel(\"gimlet\")'>Gimlet</p>";
 			break;
 
