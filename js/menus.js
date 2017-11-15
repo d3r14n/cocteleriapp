@@ -247,7 +247,6 @@ function mostrarReceta()
 					"<li>45ml de Vodka</li>"+
 					"<li>15ml de cointreau</li>"+
 					"<li>22ml de jugo de lima</li>"+
-					"<li>8 arandanos azules</li>"+
 					"<li>2 cucharadas de jarabe de azúcar</li>"+
 					"<li>3ml de jugo de arandanos</li>"+
 					"</ul>"+

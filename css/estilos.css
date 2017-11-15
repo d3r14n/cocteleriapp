@@ -135,6 +135,12 @@
 	100% { opacity: 0; }
 }
 
+@keyframes shakeCocktail
+{
+	0% {transform: translateY(0%);}
+	100% {transform: translateY(15%);}
+}
+
 /*PANTALLA INTRODUCTORIA*/
 
 .intro
