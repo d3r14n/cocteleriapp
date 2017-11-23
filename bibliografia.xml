@@ -4,6 +4,12 @@
 		<libro1 titulo="Cóctel: Los secretos más exclusivos" autor="Tupac Kirby" editorial="OBERON" pais="España" anio="2015"/>
 	</libros>
 	<plugins>
-		<plugin1 nombre="shake.js" autor="Alex Gibson" repositorio="github.com/alexgibson/shake.js">
+		<plugin1 nombre="shake.js" autor="Alex Gibson" repositorio="github.com/alexgibson/shake.js"/>
 	</plugins>
+	<web>
+		<web1 pagina="http://aipo.es/articulos/1/12461.pdf"/>
+		<web2 pagina="http://www.unamerida.com/archivospdf/440-482%20lectura%202.pdf"/>
+		<web3 pagina="https://www.beeva.com/beeva-view/diseno-y-ux/la-logica-de-la-usabilidad"/>
+		<web4 pagina="https://pdfs.semanticscholar.org/9861/19b11222e9d3b527bb73b9a6d716a39e19de.pdf"/>
+	</web>
 </bibliografia>
