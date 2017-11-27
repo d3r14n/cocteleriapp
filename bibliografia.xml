@@ -6,10 +6,17 @@
 	<plugins>
 		<plugin1 nombre="shake.js" autor="Alex Gibson" repositorio="github.com/alexgibson/shake.js"/>
 	</plugins>
+	<articulos>
+		<articulo1 titulo="WebA Mobile (Web Analysis Mobile): Herramienta de ayuda para el diseño y evaluación de websites para dispositivos móviles." autores="Luis Mena Tobar, Pedro Latorre Andrés, Elena Lafuente Lapena" pagina="http://aipo.es/articulos/1/12461.pdf"/>
+		<articulo2 titulo="Del software educativo a educar con software" autor="Bogoña Gros" pagina="http://www.unamerida.com/archivospdf/440-482%20lectura%202.pdf"/>
+		<articulo3 titulo="Principios Básicos de Usabilidad para Ingenieros Software" autor="Xavier Ferré Grau" pagina="https://pdfs.semanticscholar.org/9861/19b11222e9d3b527bb73b9a6d716a39e19de.pdf"/>
+	</articulos>
 	<web>
-		<web1 pagina="http://aipo.es/articulos/1/12461.pdf"/>
-		<web2 pagina="http://www.unamerida.com/archivospdf/440-482%20lectura%202.pdf"/>
-		<web3 pagina="https://www.beeva.com/beeva-view/diseno-y-ux/la-logica-de-la-usabilidad"/>
-		<web4 pagina="https://pdfs.semanticscholar.org/9861/19b11222e9d3b527bb73b9a6d716a39e19de.pdf"/>
+		<web1 titulo="La lógica de la usabilidad: las 10 heurísticas de Jakob Nielsen" autor="Blanca Matinez" pagina="https://www.beeva.com/beeva-view/diseno-y-ux/la-logica-de-la-usabilidad" fecha="15 febrero, 2016"/>
 	</web>
+	<icons>
+		<link href="https://www.flaticon.com/authors/smashicons" title="Smashicons"></link>
+		<page href="https://www.flaticon.com/" title="Flaticon"></page>
+		<license href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank"></license>
+	</icons>
 </bibliografia>
