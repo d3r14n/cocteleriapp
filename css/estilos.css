@@ -409,7 +409,7 @@
 	padding-top: 5%;
 	padding-bottom: 5%;
 	box-sizing: border-box;
-	background: linear-gradient(#A4C7CB, #638D99);
+	background: linear-gradient(#4B90BF, #A5BCF3);
 }
 
 .ingrediente
@@ -426,7 +426,7 @@
 	height: 40%;
 	position: absolute;
 	bottom: 10%;
-	background: linear-gradient(#638D99, #A4C7CB);
+	background: linear-gradient(#A5BCF3, #4B90BF);
 }
 
 #recipiente
